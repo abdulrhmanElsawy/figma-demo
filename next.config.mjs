@@ -2,8 +2,8 @@ const isProd = process.env.NODE_ENV === 'production';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: isProd ? '/figma-clone' : '',
-    assetPrefix: isProd ? '/figma-clone' : '',
+    basePath: isProd ? '/figma-demo' : '',
+    assetPrefix: isProd ? '/figma-demo' : '',
     images: {
         domains: ['lh3.googleusercontent.com'],
         unoptimized: true 
