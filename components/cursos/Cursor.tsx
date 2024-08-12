@@ -1,3 +1,4 @@
+
 import CursorSVG from "@/public/assets/CursorSVG";
 
 type Props = {

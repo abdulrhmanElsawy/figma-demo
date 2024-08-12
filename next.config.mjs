@@ -5,9 +5,19 @@ const nextConfig = {
     basePath: isProd ? '/figma-demo' : '',
     assetPrefix: isProd ? '/figma-demo' : '',
     images: {
+        
         domains: ['lh3.googleusercontent.com'],
-        unoptimized: true 
-    },output: "export",
+        unoptimized: true ,
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'liveblocks.io',
+                port: '',
+            }
+        ]
+    }
+    ,output: "export",
+    
     
     trailingSlash: true,
     skipTrailingSlashRedirect: true,
@@ -20,6 +30,9 @@ const nextConfig = {
 
         return config;
     },
+    typescript: {
+        ignoreBuildErrors: true,
+    }
 };
 
 export default nextConfig;

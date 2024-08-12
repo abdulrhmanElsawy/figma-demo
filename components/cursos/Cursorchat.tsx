@@ -1,3 +1,4 @@
+    
     import { CursorChatProps, CursorMode } from "@/types/type";
     import CursorSVG from "@/public/assets/CursorSVG";
 
@@ -54,7 +55,7 @@
                  */}
                 {cursorState.previousMessage && <div>{cursorState.previousMessage}</div>}
                 <input
-                className="z-10 w-60 border-none	bg-transparent text-white placeholder-blue-300 outline-none"
+                className="z-10 w-60 border-none bg-transparent text-white placeholder-blue-300 outline-none"
                 autoFocus={true}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
